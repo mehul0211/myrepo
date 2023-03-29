@@ -154,7 +154,11 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bias- error introduced from erroneous model assumptions
+
+Variance- amount that the estimate of the target function will change given different training data 
+
+Generally, a mechanistic model will have a higher bias and lower variability than an empirically driven model. Mechanistic models, which follow some type of initial function, will likely provide similar results for different data points but they may often be inaccurate (high bias, low variability)
 
 :::
 
