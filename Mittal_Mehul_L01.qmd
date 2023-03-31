@@ -34,9 +34,17 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-1. 
-2. 
-3.
+1. Split dataset
+2. EDA and feature engineering exploration 
+3. Fold training data
+4. Define recipes
+5. Set your engines and tuning grids for respective models
+6. Store parameters, update if necessary due to folds, and define grid
+7. Create workflow and save info to run in separate script
+8. Tune model grid
+9. Compare all models and select best model
+10. Obtain final results
+
 :::
 
 ### Question 2
@@ -46,8 +54,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Supervised learning is task driven and uses pre categorized data while unsupervised learning is data driven and uses unlabelled data. Supervised learning techniques include classsification and regression, which are the techniques we focused on last quarter. They create predictive models. Unsupervised learning is used to determine patterns or structures through culustering, association, or dimensionality reduction. 
 :::
 
 ### Question 3 
@@ -59,7 +66,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models will describe characteritics of some data and provide visual emphasis of some trend in the data. 
 
 :::
 
@@ -68,7 +75,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models will produce a decisions for a research question or test a hypothesis. It generally strongly relies on underlying assumptions. 
 
 :::
 
@@ -77,7 +84,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive models will strictly produce the most accurate prediction possible for new data that has been provided after the model has been trained on a set of separate data. 
 
 :::
 
@@ -99,7 +106,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model assumes that the outcome variable follows some known equation. It estimates a set of parameters. Advantages of mechanistic models are that they are easy to understand and interpret and fast but these models generally have limited complexity. Examples include linear and logistic regression.
 
 :::
 
@@ -110,8 +117,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+These models do not make assumptions regarding the model or function that the outcome variable fits with. It is a highly flexible model that can result in greater performance. The disadvantage is that these models have greater computation times and can risk overfitting. Examples are k-nearest neighbors and decision tree models. 
 :::
 
 #### Part (c)
@@ -121,7 +127,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are also known as parametric models while empirically driven models are also known as nonparametric models. 
 
 :::
 
@@ -132,7 +138,7 @@ In general, is a mechanistic or empirically driven model easier to understand? E
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistically driven model generally has the highest interpretability because it follows a simple function with defined parameters. The model has low flexibility, which enables it to give consistent results rather than adapting to the data. Though this may provide less accurate results, it is more understandable to the analyzer. 
 
 :::
 
@@ -143,7 +149,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are less flexible than empirically driven models as they follow a set equation.
 
 :::
 
@@ -169,7 +175,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Regression variables will return a numeric prediction as the outcome variable on a continuous scale while the outcome variable for classification machine learning problems is discrete. For example, when determining an ML question related to the weather, a regression ML problem would give you an exact temperature while a classification ML problem would tell you if it is cold or hot depending on the prediction it calculates. 
 
 :::
 
@@ -180,8 +186,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+It is useful if you are worried a certain category might be over or under-represented through random sampling. This technique ensures that different subgroups within the data are properly represented, giving a more accurate estimate of model parameters. 
 :::
 
 ### Question 7 
@@ -191,8 +196,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+V-fold cross validation  works by partitioning the training data into V sets of roughly equal sizes, which are called folds. One fold is then held out and used for assessment statistics. The folds are then substituted out to create performance statistics. These peformance statistics will include RMSE. V-fold cross validation is a method of resampling that allows us to take randomized cases of the original data sample and use it multiple times to estimate population parameters. It enables us to improve accuracy of population parameters, quantify the uncertainty of a population parameter, and prevent overfitting. 
 :::
 
 ### Question 8
@@ -202,8 +206,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Boostrap resampling procedure typically has very low variance compared to cross-validation. The boostrap is also already used inside many models such as the random forest model. Resampling is useful when the sample size is very small or the data is highly skewed as it enables us to retrieve more accurate estimates of the test error by essentially artifically creating a larger number of training datasets. However, the bias of this procedure is much higher. 
 :::
 
 ### Question 9 
@@ -213,8 +216,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+There are multiple parameters within training data, which are called hyperparameters, that must be specified ahead of time and cannot be found from the training data. I order to determine these parameters, we must use model tuning. Examples of these parameters include penalty and mixture for elastic net, and mtry, min_n for random forests. 
 :::
 
 ### Question 10 
