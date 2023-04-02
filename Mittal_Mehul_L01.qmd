@@ -206,7 +206,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Boostrap resampling procedure typically has very low variance compared to cross-validation. The boostrap is also already used inside many models such as the random forest model. Resampling is useful when the sample size is very small or the data is highly skewed as it enables us to retrieve more accurate estimates of the test error by essentially artifically creating a larger number of training datasets. However, the bias of this procedure is much higher. 
+Boostrap resampling procedure typically has very low variance compared to cross-validation. The boostrap is also already used inside many models such as the random forest model. Resampling is useful when the sample size is very small or the data is highly skewed as it enables us to retrieve more accurate estimates of the test error by essentially artificially creating a larger number of training datasets. However, the bias of this procedure is much higher. 
 :::
 
 ### Question 9 
@@ -226,8 +226,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+RMSE and R-Squared are the two common performance metrics. 
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
@@ -235,8 +234,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+A confusion matrix and accuracy are the two common performance metrics when dealing with a classification ML problem. 
 :::
 
 ### Question 11
@@ -250,7 +248,7 @@ A political candidate's campaign has detailed voter history data for their const
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is a prediction because it is based on past data and is predicting a future response. Based on a variety of predictors that are present in a voter's profile, a prediction for the future is being made. They are not concerned about individual relationships.
 
 :::
 
@@ -259,8 +257,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+This is inferential because we are determining the relationship between personal contact with the candidate and how that affects the outcome variable of who the voter decides to vote for. It is testing the relationship between a single predictor and teh response. 
 :::
 
 
