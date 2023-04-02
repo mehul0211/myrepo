@@ -234,7 +234,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A confusion matrix and accuracy are the two common performance metrics when dealing with a classification ML problem. 
+A confusion matrix and accuracy are the two common performance metrics when dealing with a classification ML problem. ROC_AUC is also common in other scenarios.
 :::
 
 ### Question 11
