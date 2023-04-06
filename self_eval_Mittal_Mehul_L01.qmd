@@ -1,0 +1,391 @@
+---
+title: "L01 Review Self Evaluation"
+subtitle: "Data Science 3 with R (STAT 301-3)"
+author: "Mehul Mittal"
+
+format:
+  html:
+    toc: true
+    embed-resources: true
+    code-fold: show
+    link-external-newwindow: true
+    
+execute:
+  warning: false
+
+from: markdown+emoji  
+---
+
+
+## Overview
+
+The goal of this lab is to review vocabulary and concepts from the Data Science 2 with R (STAT 301-2).
+
+## Questions
+
+When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Solution callout blocks have been added to clearly identify your solutions which will help speed up grading.
+
+Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
+
+### Question 1
+
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+1. Split dataset
+2. EDA and feature engineering exploration 
+3. Fold training data
+4. Define recipes
+5. Set your engines and tuning grids for respective models
+6. Store parameters, update if necessary due to folds, and define grid
+7. Create workflow and save info to run in separate script
+8. Tune model grid
+9. Compare all models and select best model
+10. Obtain final results
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 4
+Explanation: I could have added the initial step of data collection and a few of the steps were out of order compared to the solutions step order. 
+:::
+
+### Question 2
+
+Explain the difference between supervised and unsupervised learning.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Supervised learning is task driven and uses pre categorized data while unsupervised learning is data driven and uses unlabelled data. Supervised learning techniques include classsification and regression, which are the techniques we focused on last quarter. They create predictive models and have a formal outcome variable that is trained on unseen data. Unsupervised learning is used to determine patterns or structures through culustering, association, or dimensionality reduction. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 3
+Explanation: I did not explicitly say that supervised learning has an outcome variable that is tested through uneseen data. I have added that to my solution to make it more correct. 
+:::
+
+### Question 3 
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+1. Descriptive Models: 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Descriptive models will describe characteritics of some data and provide visual emphasis of some trend in the data. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+2. Inferential Models:
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Inferential models will produce a decisions for a research question or test a hypothesis. It generally strongly relies on underlying assumptions. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+3. Predictive Models:
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Predictive models will strictly produce the most accurate prediction possible for new data that has been provided after the model has been trained on a set of separate data. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+### Question 4 
+
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Part (a)
+
+What does it mean to be a mechanistic model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A mechanistic model assumes that the outcome variable follows some known equation. It estimates a set of parameters. Advantages of mechanistic models are that they are easy to understand and interpret and fast but these models generally have limited complexity. Examples include linear and logistic regression.
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+#### Part (b)
+
+What does it mean to be an empirically driven model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+These models do not make assumptions regarding the model or function that the outcome variable fits with. It is a highly flexible model that can result in greater performance. The disadvantage is that these models have greater computation times and can risk overfitting. Examples are k-nearest neighbors and decision tree models. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+#### Part (c)
+
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic models are also known as parametric models while empirically driven models are also known as nonparametric models. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+#### Part (d)
+
+In general, is a mechanistic or empirically driven model easier to understand? Explain.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A mechanistically driven model generally has the highest interpretability because it follows a simple function with defined parameters. The model has low flexibility, which enables it to give consistent results rather than adapting to the data. Though this may provide less accurate results, it is more understandable to the analyzer. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+#### Part (e)
+
+How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic models are less flexible than empirically driven models as they follow a set equation.
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+#### Part (f)
+
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Bias- error introduced from erroneous model assumptions
+
+Variance- amount that the estimate of the target function will change given different training data 
+
+Generally, a mechanistic model will have a higher bias and lower variability than an empirically driven model. Mechanistic models, which follow some type of initial function, will likely provide similar results for different data points but they may often be inaccurate (high bias, low variability)
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct/ answer given in class. 
+:::
+
+### Question 5 
+
+Explain the difference between a regression and classification machine learning (ML) problems.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Regression variables will return a numeric prediction as the outcome variable on a continuous scale while the outcome variable for classification machine learning problems is discrete. For example, when determining an ML question related to the weather, a regression ML problem would give you an exact temperature while a classification ML problem would tell you if it is cold or hot depending on the prediction it calculates. 
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 4
+Explanation: Correct, but could have used the word categorical or factor instead of discrete. 
+:::
+
+### Question 6 
+
+When splitting the data, why is it useful to stratify by the outcome/target variable? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+It is useful if you are worried a certain category might be over or under-represented through random sampling. This technique ensures that different subgroups within the data are properly represented, giving a more accurate estimate of model parameters. It is important to stratify the data to ensure that both the training and testing datasets are similarly distributed to prevent overfitting or underfitting. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 3
+Explanation: Did not explain that stratifying is important to ensure that the distribution between the training and testing datasets are similar. I added this point to my solution to make it fully correct. 
+:::
+
+### Question 7 
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+V-fold cross validation  works by partitioning the training data into V sets of roughly equal sizes, which are called folds. One fold is then held out and used for assessment statistics. The folds are then substituted out to create performance statistics. These peformance statistics will include RMSE. V-fold cross validation is a method of resampling that allows us to take randomized cases of the original data sample and use it multiple times to estimate population parameters. It enables us to improve accuracy of population parameters, quantify the uncertainty of a population parameter, and prevent overfitting. It is more effective than only splitting the data once. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 4
+Explanation: Correct, but could have mentioned the importance of resampling multiple times which allows us to cinfirm that a particular split of the data is not overly influencing the data. 
+:::
+### Question 8
+
+When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Boostrap resampling procedure typically has very low variance compared to cross-validation. The boostrap is also already used inside many models such as the random forest model. Resampling is useful when the sample size is very small or the data is highly skewed as it enables us to retrieve more accurate estimates of the test error by essentially artificially creating a larger number of training datasets. However, the bias of this procedure is much higher. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+### Question 9 
+
+Briefly describe model tuning and why we use it.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+There are multiple parameters within training data, which are called hyperparameters, that must be specified ahead of time and cannot be found from the training data. In order to determine these parameters, we must use model tuning. Examples of these parameters include penalty and mixture for elastic net, and mtry, min_n for random forests. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 4
+Explanation: Correct, but a few typos were present. 
+:::
+
+### Question 10 
+
+What are two common performance metrics when dealing with a regression ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+RMSE and R-Squared are the two common performance metrics. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+What are two common performance metrics when dealing with a classification ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A confusion matrix and accuracy are the two common performance metrics when dealing with a classification ML problem. ROC_AUC is also common in other scenarios.
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+### Question 11
+
+Classify each question/problem below as either prediction or inferential. Explain your reasoning for each.
+
+A political candidate's campaign has detailed voter history data for their constituents. The campaign is interested in two questions:
+
+1. Given a voter's profile/data how likely is it that they will vote in favor of the candidate?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+This is a prediction because it is based on past data and is predicting a future response. Based on a variety of predictors that are present in a voter's profile, a prediction for the future is being made. They are not concerned about individual relationships.
+
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 5
+Explanation: Correct
+:::
+
+2. How would a voter's likelihood of support for the candidate change if they had personal contact with the candidate?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+This is inferential because we are determining the relationship between personal contact with the candidate and how that affects the outcome variable of who the voter decides to vote for. It is testing the relationship between a single predictor and the response. 
+:::
+
+::: {.callout-tip icon="false"}
+## Self Evaluation
+Score: 4
+Explanation: Correct, but there are typos present that have now been corrected. 
+:::
+
+
+## Github Repo Link
+
+::: {.callout-important}
+
+To link to your github repository, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
+
+[https://github.com/mehul0211/myrepo](https://github.com/mehul0211/myrepo)
+
+:::
