@@ -376,7 +376,7 @@ This is inferential because we are determining the relationship between personal
 ::: {.callout-tip icon="false"}
 ## Self Evaluation
 Score: 4
-Explanation: Correct, but there are typos present that have now been corrected. 
+Explanation: Correct, but there were typos present that have now been corrected. 
 :::
 
 
